@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="produtos-container">
+        <div class="card" data-id="1" data-nome="Camiseta" data-valor="29.99">
+            <p>ID: 1</p>
+            <p>Nome: Camiseta</p>
+            <p>Valor: R$29.99</p>
+            <p>Quantidade: 1</p>
+            <button onclick="adicionarProduto(1, 'Camiseta', 29.99, 1)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card" data-id="2" data-nome="Calça Jeans" data-valor="99.90">
+            <p>ID: 2</p>
+            <p>Nome: Calça Jeans</p>
+            <p>Valor: R$99.90</p>
+            <p>Quantidade: 1</p>
+            <button onclick="adicionarProduto(2, 'Calça Jeans', 99.90, 1)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card" data-id="3" data-nome="Tênis" data-valor="149.90">
+            <p>ID: 3</p>
+            <p>Nome: Tênis</p>
+            <p>Valor: R$149.90</p>
+            <p>Quantidade: 1</p>
+            <button onclick="adicionarProduto(3, 'Tênis', 149.90, 1)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div id="carrinho-box" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3>Carrinho de Compras</h3>
+        <ul id="lista-produtos"></ul>
+    </div>
+    
+    <script src="atividade2.js"></script>
+</body>
+</html>
